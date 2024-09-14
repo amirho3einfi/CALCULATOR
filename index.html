@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./media/cal.png" type="image/x-icon">
+    <title>CALCULATOR</title>
+  </head>
+  <body class="w-full h-[100vh] flex flex-col  justify-evenly items-center ">
+
+
+
+
+
+    <!-- کل ماشین حساب -->
+    <div
+      class="kol-cal w-[95%] h-[600px]     md:w-[65%] md:h-[600px]    lg:w-[500px] lg:h-[600px] pt-9 bg-[#393F3F] rounded-3xl shadow-[7px_5px_8px_3px_rgba(0,0,0,0.37)]"
+    >
+      <!-- صفحه نمایش ماشین حساب  -->
+<div class="output">
+      <input
+        value="" placeholder="0" type="text" disabled class="text w-[85%] h-[100px] rounded-lg border-black border-[4px] mx-auto p-2 flex items-center text-[50px] text-[#383838da] bg-[#CBDD9F]"
+      >
+    
+      </input>
+</div>
+
+      <!-- قسمت دکمه ها در ماشین حساب  -->
+      <div class="w-[85%] h-[400px] mx-auto mt-7 flex flex-col">
+        <!-- ردیف اول دکمه ها  -->
+        <div class="w-full h-20 flex items-center justify-between">
+          <input
+            type="button" value="Del" class="operato del w-[22%] h-[80%] bg-[#676766] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+      
+  
+          <input
+            type="button" value="M-" class="w-[22%] h-[80%] bg-[#676766] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+
+          <input
+           type="button" value="M+" class="w-[22%] h-[80%] bg-[#676766] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+      
+          <input
+          type="button" value="/"  class="operator val w-[22%] h-[80%] bg-[#FC586F] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+            
+          </input>
+        </div>
+        <!-- ردیف دوم دکمه ها -->
+        <div class="w-full h-20 flex items-center justify-between">
+          <input
+           type="button" value="7" class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+          
+          <input
+            type="button" value="8" class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+
+          <input
+            type="button" value="9" class=" val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+      
+          <input
+            type="button" value="*" class="operator val w-[22%] h-[80%] bg-[#FC586F] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+          
+        </div>
+        <!-- ردیف سوم دکمه ها -->
+        <div class="w-full h-20 flex items-center justify-between">
+
+          <input
+            type="button" value="4" class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+            
+          <input
+           type="button" value="5" class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+           
+          <input
+           type="button" value="6" class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+           
+          <input
+           type="button" value="-" class="operator val w-[22%] h-[80%] bg-[#FC586F] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+  
+        </div>
+        <!-- ردیف چهارم دکمه ها  -->
+        <div class="w-full h-20 flex items-center justify-between">
+
+          <input
+           type="button" value="1" class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+           
+          <input
+           type="button" value="2" class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+          
+          <input
+          type="button" value="3"  class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+            
+          <input
+           type="button" value="+" class="operator val w-[22%] h-[80%] bg-[#FC586F] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+           
+        </div>
+        <!-- ردیف پنجم دکمه ها  -->
+        <div class="w-full h-20 flex items-center justify-between">
+
+          <input
+           type="button" value="0" class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+          
+          <input
+          type="button" value="."  class="val w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+          
+          <input
+           type="button" value="AC" class="operator ac w-[22%] h-[80%] bg-[#222222] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+            
+          <input
+           type="button" value="=" class="operator equal w-[22%] h-[80%] bg-[#FCAF21] flex items-center justify-center text-[30px] text-white font-bold rounded-lg border-gray-500 border-[1px] cursor-pointer"
+          >
+       
+        </div>
+      </div>
+    </div>
+
+    <p class="text-[11px] hover:scale-105 mb-1" >**Design By Amirhossein Fakhari**</p>
+
+
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
